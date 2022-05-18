@@ -1,0 +1,6 @@
+{
+    "host": "SECRETHOST",
+    "name": "VideoToModel",
+    "username": "SECRETUSERNAME",
+    "password": "SECRETPASSWORD"
+}

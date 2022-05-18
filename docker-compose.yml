@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  heliosia:
+    container_name: heliosia
+    restart: always
+    build: .
+    command: python3 Core.py

@@ -1,0 +1,29 @@
+//Protobuf structure definition
+
+syntax = "proto3";
+
+message PredObject {
+	repeated float coo = 1;
+	float score = 2;
+}
+
+message Frame {
+	string time = 1;
+	int64 n_objs = 2;
+	int64 frame_id = 3;
+	repeated PredObject pedestrian = 4;
+	repeated PredObject people = 5;
+	repeated PredObject bicycle = 6;
+	repeated PredObject car = 7;
+	repeated PredObject van = 8;
+	repeated PredObject truck = 9;
+	repeated PredObject tricycle = 10;
+	repeated PredObject awningtricycle = 11;
+	repeated PredObject bus = 12;
+	repeated PredObject motor = 13;
+}
+
+message Data {
+	string location = 1;
+	repeated Frame data = 2;
+}

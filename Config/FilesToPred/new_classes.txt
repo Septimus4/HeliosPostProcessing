@@ -1,0 +1,10 @@
+pedestrian
+people
+bicycle
+car
+van
+truck
+tricycle
+awningtricycle
+bus
+motor

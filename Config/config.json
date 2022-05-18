@@ -1,0 +1,25 @@
+{
+	"is_demo":false,
+	"location":"test01",
+	"config_mongo":"./Config/mongodb.json",
+	"db_get":"VideoToModel",
+	"db_upload":"IAAnalysis",
+	"expframe_config": {
+		"filepath":"./Predict/OutFrames/test01.helios",
+		"method":["yolo", "./Config/FilesToPred/new_classes_order.txt"]
+	},
+	"expy_pred":"./Predict/OutFrames/test01.helios",
+	"model_config": {
+		"model_path": "./LastModel_yv3/yolov3_15102020_final.h5",
+		"anchors_path": "./Config/FilesToPred/yolo_anchors.txt",
+		"classes_path": "./Config/FilesToPred/data_classes.txt",
+		"score": 0.5,
+		"model_image_size": [416, 416]
+	},
+	"maptopy_config": {
+		"map_prefix":"./Scripts/MapToPy/DataOut/",
+		"coo":[47.935537, 7.179458],
+		"img_size":[1280, 720]
+	},
+	"path_eq":"./Scripts/MapToPy/DataOut/test01.json"
+}
